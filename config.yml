@@ -1,0 +1,11 @@
+ioPaths:
+  -
+    - "ui/*.ui"
+    - "ui/%%FILENAME%%.py"
+  -
+    - "resources/*.qrc"
+    - "generated/%%FILENAME%%_%%EXT%%.py"
+
+uic_options: --from-imports
+init_package: True
+force: False

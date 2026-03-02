@@ -1,0 +1,141 @@
+from _decimal import Decimal
+
+from PyQt5.QtCore import QFile
+
+from models.category import Category
+from generated import app_qrc
+from models.product import Product
+
+CATEGORIES: list[tuple[Category, list[Product]]] = [
+    (
+        Category(
+            id=None,
+            label='Супы',
+            text='Категория супов',
+            image=QFile(':/images/soup/borsh.png')
+        ),
+        [
+            Product(
+                category=None,
+                id=None,
+                name='Борщ',
+                price=Decimal(300),
+                image=QFile(':/images/soup/borsh.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Куринный',
+                price=Decimal(250),
+                image=QFile(':/images/soup/chicken.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='С фрикадельками',
+                price=Decimal(250),
+                image=QFile(':/images/soup/fricadelki.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Гороховый',
+                price=Decimal(300),
+                image=QFile(':/images/soup/pea.png')
+            ),
+        ]
+    ),
+    (
+        Category(
+            id=None,
+            label='Горячие',
+            text='Горячие блюда',
+            image=QFile(':/images/hot_dish/meatball.png')
+        ),
+        [
+            Product(
+                category=None,
+                id=None,
+                name='Котлеты',
+                price=Decimal(300),
+                image=QFile(':/images/hot_dish/meatball.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Шашлык',
+                price=Decimal(400),
+                image=QFile(':/images/hot_dish/shashl.png')
+            ),
+        ]
+    ),
+    (
+        Category(
+            id=None,
+            label='Салаты',
+            text='Салаты',
+            image=QFile(':/images/salad/cesar.png')
+        ),
+        [
+            Product(
+                category=None,
+                id=None,
+                name='Цезарь',
+                price=Decimal(200),
+                image=QFile(':/images/salad/cesar.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Овощной',
+                price=Decimal(200),
+                image=QFile(':/images/salad/fresh.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Греческий',
+                price=Decimal(220),
+                image=QFile(':/images/salad/greek.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Крабовый',
+                price=Decimal(150),
+                image=QFile(':/images/salad/krab.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Оливье',
+                price=Decimal(150),
+                image=QFile(':/images/salad/russian.png')
+            ),
+        ],
+    ),
+    (
+        Category(
+            id=None,
+            label='Напитки',
+            text='Напитки',
+            image=QFile(':/images/drink/juice.png')
+        ),
+        [
+            Product(
+                category=None,
+                id=None,
+                name='Сок в ассортименте',
+                price=Decimal(100),
+                image=QFile(':/images/drink/juice.png')
+            ),
+            Product(
+                category=None,
+                id=None,
+                name='Морс',
+                price=Decimal(100),
+                image=QFile(':/images/drink/mors.png')
+            ),
+        ]
+    )
+]

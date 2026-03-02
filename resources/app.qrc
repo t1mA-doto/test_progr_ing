@@ -1,0 +1,17 @@
+<RCC>
+    <qresource>
+        <file>images/soup/borsh.png</file>
+        <file>images/soup/chicken.png</file>
+        <file>images/soup/fricadelki.png</file>
+        <file>images/soup/pea.png</file>
+        <file>images/drink/juice.png</file>
+        <file>images/drink/mors.png</file>
+        <file>images/hot_dish/meatball.png</file>
+        <file>images/hot_dish/shashl.png</file>
+        <file>images/salad/cesar.png</file>
+        <file>images/salad/fresh.png</file>
+        <file>images/salad/greek.png</file>
+        <file>images/salad/krab.png</file>
+        <file>images/salad/russian.png</file>
+    </qresource>
+</RCC>
